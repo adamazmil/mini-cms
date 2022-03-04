@@ -1,4 +1,8 @@
 {
+  "name": "mini-cms",
+  "version": "1.0.0",
+  "description" : "Video serving cms webapp",
+  "main":"index.js",
   "dependencies": {
     "express": "^4.17.3",
     "pg": "^8.7.3"
