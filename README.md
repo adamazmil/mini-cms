@@ -2,9 +2,9 @@
 A cms to serve video. 
 
 ## **Requirements** 
-node.js
-postgresql 11
-nodemon 
+- node.js
+- postgresql 11
+- nodemon 
 
 ## **Run**
 ```
