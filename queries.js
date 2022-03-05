@@ -1,11 +1,10 @@
 const { Pool } = require("pg");
-
 const pool = new Pool({
-  user: "dev",
-  host: "localhost",
-  database: "mini-cms",
-  password: "password",
-  port: 5433,
+  user: process.env.POSTGRES_USER,
+  host: process.env.POSTGRES_HOST,
+  database: process.env.POSTGRES_NAME,
+  password: process.env.POSTGRES_PASSWORD,
+  port: process.env.POSTGRES_PORT,
 });
 
 const getVideos = async (request, response) => {
