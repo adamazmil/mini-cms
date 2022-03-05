@@ -1,12 +1,12 @@
 # mini-cms
 A cms to serve video. 
 
-##**Requirements** 
+## **Requirements** 
 node.js
 postgresql 11
 nodemon 
 
-##**Run**
+## **Run**
 ```
 npm install
 npm run start:dev
