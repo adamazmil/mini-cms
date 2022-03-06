@@ -5,7 +5,7 @@ A cms to serve video.
 - node.js
 - postgresql 11
 - nodemon 
-##.env template
+## .env template
 ```
   #Database Connection
   POSTGRES_USER= "dev"
