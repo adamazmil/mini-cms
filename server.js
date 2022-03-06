@@ -10,10 +10,10 @@ app.use(
     extended: true,
   })
 );
-app.get("/", (request, response) => {
+app.get("/api", (request, response) => {
   response.json({ info: "Video serving cms webapp" });
 });
-app.use("/", video);
+app.use("/api", video);
 app.listen(port, () => {
   console.log(`App running on port ${port}.`);
 });
