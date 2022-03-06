@@ -4,11 +4,12 @@
   "description": "Video serving cms webapp",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon index.js"
+    "start:dev": "nodemon server.js"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "morgan": "^1.10.0",
     "pg": "^8.7.3"
   }
 }
