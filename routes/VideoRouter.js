@@ -15,5 +15,9 @@ router.put("/videos/:id", requiresAuth(), db.updateVideo);
 //DELETE REQUST TO DELETE VIDEO
 router.delete("/videos/:id", requiresAuth(), db.deleteVideo);
 //GET request for default video
-router.get("/default", db.getDefaultVideo);
+//router.get("/default", db.getDefaultVideo);
+router.get("/default", function (req, res) {
+  const uuid = "d0438c4b-21f0-4944-8e1a-46c32876c913";
+  res.sendFile("/" + uuid + ".mp4", { root: "./public/media" });
+});
 module.exports = router;
