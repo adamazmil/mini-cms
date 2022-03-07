@@ -16,6 +16,7 @@ function App() {
   //     .then((res) => res.file())
   //     .then((data) => setDefaultVideo(data));
   // };
+  //Lists out json info of video
   const ListVideo = ({ id, title }) => (
     <li>
       {title} &mdash; {id}
@@ -31,7 +32,7 @@ function App() {
   const PlayDefaultVideo = (props) => {
     return (
       <div>
-        <video width="1228" height="691" controls>
+        <video width="1228" height="691" controls autoPlay>
           <source src={"api/default"} type="video/mp4" />
         </video>
         <FinishVideo />
