@@ -1,0 +1,5 @@
+Place media files here in format uuid.mp4
+Default video uuid d0438c4b-21f0-4944-8e1a-46c32876c913
+
+example: 
+d0438c4b-21f0-4944-8e1a-46c32876c913.mp4

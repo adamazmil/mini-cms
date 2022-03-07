@@ -27,6 +27,8 @@ A cms to serve video.
   BASE_URL= "http://localhost:5000"
   PORT= 5000
 ```
+## **File Setup**
+Read media.txt in client/media folder
 ## **Run**
 ```
 npm install
