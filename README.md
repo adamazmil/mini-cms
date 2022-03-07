@@ -1,11 +1,16 @@
 # mini-cms
 A cms to serve video. 
-
+## **Features**
+- Express Backend
+- React Frontend
+- Logging with Morgan 
+- Authentication with Auth 0 
+- Postgresql
 ## **Requirements** 
-- node.js
+- node.js v16+
 - postgresql 11
 - nodemon 
-## .env template
+## **.env template**
 ```
   #Database Connection
   POSTGRES_USER= "dev"
