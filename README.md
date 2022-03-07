@@ -28,7 +28,7 @@ A cms to serve video.
   PORT= 5000
 ```
 ## **File Setup**
-Read media.txt in client/media folder
+Read media.txt in public/media folder
 ## **Run**
 ```
 npm install
