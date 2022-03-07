@@ -2,20 +2,20 @@ import "./App.css";
 import React, { useState } from "react";
 
 function App() {
-  const [videos, setVideos] = React.useState([]);
-  const getVideos = async () => {
-    await fetch("api/videos")
-      .then((res) => res.json())
-      .then((data) => setVideos(data));
-  };
-  const [clickPlay, setClickPlay] = React.useState(false);
-  const [clickFinish, setClickFinish] = React.useState(false);
-  const [defaultVideo, setDefaultVideo] = React.useState([]);
-  const getDefaultVideoID = async () => {
-    await fetch("api/default")
-      .then((res) => res.json())
-      .then((data) => setDefaultVideo(data));
-  };
+  const [videos, setVideos] = useState([]);
+  // const getVideos = async () => {
+  //   await fetch("api/videos")
+  //     .then((res) => res.json())
+  //     .then((data) => setVideos(data));
+  // };
+  const [clickPlay, setClickPlay] = useState(false);
+  const [clickFinish, setClickFinish] = useState(false);
+  const [defaultVideo, setDefaultVideo] = useState([]);
+  // const getDefaultVideoID = async () => {
+  //   await fetch("api/default")
+  //     .then((res) => res.file())
+  //     .then((data) => setDefaultVideo(data));
+  // };
   const ListVideo = ({ id, title }) => (
     <li>
       {title} &mdash; {id}
@@ -32,14 +32,14 @@ function App() {
     return (
       <div>
         <video width="1228" height="691" controls>
-          <source src={"/media/" + props.video.id + ".mp4"} type="video/mp4" />
+          <source src={"api/default"} type="video/mp4" />
         </video>
         <FinishVideo />
       </div>
     );
   };
   const onClickPlay = async () => {
-    await getDefaultVideoID();
+    //await getDefaultVideoID();
     await setClickFinish(false);
     await setClickPlay(true);
   };

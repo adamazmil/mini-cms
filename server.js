@@ -26,6 +26,7 @@ app.use(auth(config));
 app.get("/api", (request, response) => {
   response.json({ info: "Video serving cms webapp" });
 });
+app.use(express.static("public"));
 app.use("/api", video);
 
 app.listen(port, () => {
