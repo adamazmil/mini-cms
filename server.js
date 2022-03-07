@@ -27,6 +27,7 @@ app.get("/api", (request, response) => {
   response.json({ info: "Video serving cms webapp" });
 });
 app.use("/api", video);
+
 app.listen(port, () => {
   console.log(`App running on port ${port}.`);
 });

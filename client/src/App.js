@@ -12,7 +12,7 @@ function App() {
   const [clickFinish, setClickFinish] = React.useState(false);
   const [defaultVideo, setDefaultVideo] = React.useState([]);
   const getDefaultVideoID = async () => {
-    await fetch("api/videos/d0438c4b-21f0-4944-8e1a-46c32876c913")
+    await fetch("api/default")
       .then((res) => res.json())
       .then((data) => setDefaultVideo(data));
   };

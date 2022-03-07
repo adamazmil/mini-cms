@@ -14,5 +14,6 @@ router.post("/videos", requiresAuth(), db.createVideo);
 router.put("/videos/:id", requiresAuth(), db.updateVideo);
 //DELETE REQUST TO DELETE VIDEO
 router.delete("/videos/:id", requiresAuth(), db.deleteVideo);
-
+//GET request for default video
+router.get("/default", db.getDefaultVideo);
 module.exports = router;

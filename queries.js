@@ -37,6 +37,23 @@ const getVideosById = async (request, response) => {
     console.error(error);
   }
 };
+const getDefaultVideo = async (request, response) => {
+  const uuid = "d0438c4b-21f0-4944-8e1a-46c32876c913";
+  try {
+    await pool.query(
+      "SELECT * FROM videos WHERE id = $1",
+      [uuid],
+      (error, results) => {
+        if (error) {
+          throw error;
+        }
+        response.status(200).json(results.rows);
+      }
+    );
+  } catch (error) {
+    console.error(error);
+  }
+};
 
 const createVideo = async (request, response) => {
   const { title } = request.body;
@@ -96,6 +113,7 @@ const deleteVideo = async (request, response) => {
 module.exports = {
   getVideos,
   getVideosById,
+  getDefaultVideo,
   createVideo,
   updateVideo,
   deleteVideo,
