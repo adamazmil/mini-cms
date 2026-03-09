@@ -2,9 +2,9 @@
   "name": "mini-cms",
   "version": "1.0.0",
   "description": "Video serving cms webapp",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
-    "start:dev": "nodemon server.js"
+    "start:dev": "nodemon server/server.js"
   },
   "dependencies": {
     "auth0": "^2.40.0",
